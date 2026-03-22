@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission | Creamberg</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Dancing+Script:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffc0cb;
+            background: linear-gradient(135deg, #ffc0cb 0%, #ffe4e1 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .business-title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: clamp(50px, 10vw, 90px);
+            background: linear-gradient(to bottom, #fc54a8, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.1));
+            margin-bottom: 30px;
+        }
+
+    
+        .mission-container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 50px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+       
+        .mission-container::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            font-family: 'Luckiest Guy';
+            font-size: 80px;
+            color: rgba(100, 149, 237, 0.3); 
+        }
+
+        .mission-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(24px, 4vw, 36px);
+            color: #6495ed; 
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+        }
+
+       
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .owner-tag {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fc54a8;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+      
+        .back-btn {
+            text-decoration: none;
+            background: #333;
+            color: white;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background: #fc54a8;
+            box-shadow: 0 5px 15px rgba(252, 84, 168, 0.4);
+            transform: scale(1.05);
+        }
+
+      
+        footer {
+            width: 100%;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        footer p { font-size: 14px; color: #555; }
+        footer span { color: #fc54a8; font-weight: bold; }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <h1 class="business-title">Our Mission</h1>
+
+        <div class="mission-container">
+            <p class="mission-text">
+                To transform the simple joy of a scoop into an unforgettable moment by crafting unique, high-quality flavors that bridge the gap between nostalgic comfort and premium cuisine.
+            </p>
+        </div>
+
+        <img src="vadhir.jpg.jpeg" class="profile-img" alt="Founder">
+        <p class="owner-tag">Founder of Creamberg</p>
+
+        <a href="Home.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Creamberg. All Rights Reserved.</p>
+        <p>Designed by <span>Vadhir Chan, Gael Gomez, & Owen Innis</span></p>
+    </footer>
+
+</body>
+</html>

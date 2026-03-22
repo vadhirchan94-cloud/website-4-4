@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Creamberg</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    
+    <style>
+       
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffc0cb; 
+            background: linear-gradient(135deg, #ffc0cb 0%, #ffe4e1 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+     
+        .header-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .business-title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: clamp(50px, 10vw, 90px);
+            background: linear-gradient(to bottom, #fc54a8, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.1));
+            margin-bottom: 10px;
+        }
+
+        
+        .menu-container {
+            flex: 1;
+            width: 100%;
+            max-width: 1100px;
+            padding: 0 20px 50px 20px;
+            display: grid;
+            
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+   
+        .menu-item {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(252, 84, 168, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border: 3px solid white;
+        }
+
+        .item-name {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 22px;
+            color: #6495ed; 
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .item-price {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fc54a8;
+            background: white;
+            display: inline-block;
+            padding: 2px 15px;
+            border-radius: 20px;
+        }
+
+        
+        .nav-buttons {
+            margin-bottom: 50px;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            background: #333;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #fc54a8;
+            box-shadow: 0 5px 15px rgba(252, 84, 168, 0.4);
+        }
+
+       
+        footer {
+            width: 100%;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        footer p { font-size: 14px; color: #555; }
+        footer span { color: #fc54a8; font-weight: bold; }
+
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1 class="business-title">Our Menu</h1>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="Menuitem1.jpg.jpeg" alt="Cup Ice Cream">
+            <p class="item-name">Cup Ice Cream</p>
+            <p class="item-price">$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Menuitem2.jpg.jpeg" alt="Vanilla Cup">
+            <p class="item-name">Cup Ice Cream Vanilla</p>
+            <p class="item-price">$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Menuitem3.jpg.jpeg" alt="Cone Ice Cream">
+            <p class="item-name">Cone Ice Cream</p>
+            <p class="item-price">$4.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Menuitem4.jpg.jpeg" alt="Deluxe Cone">
+            <p class="item-name">Vanilla Cone with Chocolate & Sprinkles</p>
+            <p class="item-price">$5.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Menuitem5.jpg.jpeg" alt="Banana Split">
+            <p class="item-name">Banana Split Special</p>
+            <p class="item-price">$13.00</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Menuitem6.jpg.jpeg" alt="Chamoyada">
+            <p class="item-name">Chamoyada</p>
+            <p class="item-price">$4.00</p>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="Home.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Creamberg. All Rights Reserved.</p>
+        <p>Designed by <span>Vadhir Chan, Gael Gomez, & Owen Innis</span></p>
+    </footer>
+
+</body>
+</html>

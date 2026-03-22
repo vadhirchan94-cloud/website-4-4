@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Creamberg</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+       
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body { height: 100%; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffc0cb;
+            background: linear-gradient(135deg, #ffc0cb 0%, #ffe4e1 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+
+        
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            width: 100%;
+        }
+
+        .business-title {
+            font-family: 'Luckiest Guy', cursive;
+            font-size: clamp(50px, 10vw, 90px);
+            background: linear-gradient(to bottom, #fc54a8, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.1));
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-family: 'Luckiest Guy', cursive;
+            color: #6495ed; 
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        
+        .contact-card {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .info-row {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .info-row b {
+            color: #fc54a8;
+            display: block;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .info-row p {
+            font-weight: 500;
+            word-wrap: break-word;
+        }
+
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%; 
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 10px;
+        }
+
+        
+        .back-btn {
+            text-decoration: none;
+            background: #333;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .back-btn:hover {
+            background: #fc54a8;
+            box-shadow: 0 5px 15px rgba(252, 84, 168, 0.4);
+            transform: translateY(-2px);
+        }
+
+       
+        footer {
+            width: 100%;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        footer p { font-size: 14px; color: #555; }
+        footer span { color: #fc54a8; font-weight: bold; }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <h1 class="business-title">Contact Us</h1>
+        <p class="subtitle">GET IN TOUCH WITH THE SCOOP TEAM</p>
+
+        <div class="contact-card">
+            <div class="info-row">
+                <b>Email</b>
+                <p>creambergbelize@gmail.com</p>
+            </div>
+
+            <div class="info-row">
+                <b>Phone</b>
+                <p>+501 604-1689</p>
+            </div>
+
+            <div class="info-row">
+                <b>Instagram</b>
+                <p>@creamberg.bze</p>
+            </div>
+
+            <img src="vadhir.jpg.jpeg" class="profile-img" alt="Contact Person">
+        </div>
+
+        <a href="Home.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Creamberg. All Rights Reserved.</p>
+        <p>Designed by <span>Vadhir Chan, Gael Gomez, & Owen Innis</span></p>
+    </footer>
+
+</body>
+</html>
